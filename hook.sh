@@ -27,9 +27,8 @@ cplate() {
                 return 0
                 ;;
             * )
-                dest="$2"
-                mkdir -p "$dest"
-                cp -r "$HOME/Templates/Cplates/content/"* "$dest"
+                mkdir -p "$1"
+                cp -r "$HOME/Templates/Cplates/content/"* "$1"
                 return 0
         esac
         shift
